@@ -333,7 +333,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .Operating_System {
-  	width: 99%;
+  	width: 100%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 5s ease;
 }
@@ -343,17 +343,17 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: illustrator 5s ease;
 }
 .Computer_Software_Applications {
-  	width: 95%;
+  	width: 98%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 5s ease;
 }
 .Computer_Network_Configuration {
-  	width: 90%;
+  	width: 98%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 5s ease;
 }
 .Computer_Programming {
-  	width: 60%;
+  	width: 98%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 5s ease;
 }
