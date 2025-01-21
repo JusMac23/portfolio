@@ -79,11 +79,30 @@
                </div>
 		<div class="columns view">
 		   <p>
-		      <a id="view-link" href="Resume.pdf" target="_blank" class="button">
+		      <button id="view-toggle" class="button">
 		         <i class="fa fa-eye"></i> View Resume
-		      </a>
+		      </button>
 		   </p>
 		</div>
+		
+		<div id="resume-container" style="display: none; margin-top: 20px;">
+		   <iframe src="Resume.pdf" style="width: 100%; height: 500px; border: none;"></iframe>
+		</div>
+		
+		<script>
+		   document.getElementById("view-toggle").addEventListener("click", function () {
+		      const resumeContainer = document.getElementById("resume-container");
+		      if (resumeContainer.style.display === "none") {
+		         // Show the resume
+		         resumeContainer.style.display = "block";
+		         this.innerHTML = '<i class="fa fa-eye-slash"></i> Hide Resume';
+		      } else {
+		         // Hide the resume
+		         resumeContainer.style.display = "none";
+		         this.innerHTML = '<i class="fa fa-eye"></i> View Resume';
+		      }
+		   });
+		</script>
 
             </div> 
          </div> 
